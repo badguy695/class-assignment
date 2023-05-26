@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  english;
+        english = parseInt(prompt("Enter the marks which you gain in english subject"));
+
+        var mathematics;
+        mathematics = parseInt(prompt("Enter the marks which you gain in mathematics subject"));
+        
+        var sindhi;
+        sindhi= parseInt(prompt("Enter the marks which you gain in sindhi subject"));
+        
+        var physics;
+        physics = parseInt(prompt("Enter the marks which you gain in physics subject"));
+        
+        var obtainedMarks;
+        obtainedMarks = english + mathematics + sindhi + physics ;
+
+        var percentage;
+        percentage = obtainedMarks/400*100;
+
+        if(percentage >=0 && percentage <= 32)
+        {
+            document.write("SORRY YOU ARE FAIL");
+        }
+
+        else if(percentage >= 33 && percentage <=45)
+        {
+            document.write("GRADE E NEED MORE IMPROVEMENT");
+        }
+
+        else if (percentage >= 46 && percentage <=56)
+        {
+            document.write("GRADE D NEED MORE IMPROVEMENT");
+        }
+        
+        else if (percentage >= 57 && percentage <=63)
+        {
+            document.write("GRADE C NEED MORE IMPROVEMENT");
+        }
+
+        else if (percentage >= 64 && percentage <=77)
+        {
+            document.write("GRADE B NEED MORE IMPROVEMENT");
+        }
+
+        else if (percentage >= 78 && percentage <=100)
+        {
+            document.write("GRADE A KEEP IT UP");
+        }
+
+
+
+    </script>
+</body>
+</html>
